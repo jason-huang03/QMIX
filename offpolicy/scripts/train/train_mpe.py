@@ -66,6 +66,8 @@ def main(args):
     parser = get_config()
     all_args = parse_args(args, parser)
 
+    all_args.use_wandb = False # for convenience
+
     # cuda and # threads
     if all_args.cuda and torch.cuda.is_available():
         print("choose to use gpu...")

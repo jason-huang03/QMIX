@@ -67,7 +67,7 @@ class RecRunner(object):
         else:
             self.use_avail_acts = False
 
-        if config.__contains__("buffer_length"):
+        if config.__contains__("buffer_length") and config["buffer_length"] != None:
             self.episode_length = config["buffer_length"]
             if self.args.use_naive_recurrent_policy:
                 self.data_chunk_length = config["buffer_length"]

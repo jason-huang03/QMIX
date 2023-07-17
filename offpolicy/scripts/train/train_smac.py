@@ -9,15 +9,57 @@ import torch
 from offpolicy.config import get_config
 from offpolicy.utils.util import get_cent_act_dim, get_dim_from_space
 from offpolicy.envs.starcraft2.StarCraft2_Env import StarCraft2Env
-from offpolicy.envs.starcraft2.smac_maps import get_map_params
+from offpolicy.envs.starcraft2.SMACv2_modified import SMACv2
 from offpolicy.envs.env_wrappers import ShareDummyVecEnv, ShareSubprocVecEnv
+
+
+def parse_smacv2_distribution(args):
+    units = args.units.split('v')
+    distribution_config = {
+        "n_units": int(units[0]),
+        "n_enemies": int(units[1]),
+        "start_positions": {
+            "dist_type": "surrounded_and_reflect",
+            "p": 0.5,
+            "map_x": 32,
+            "map_y": 32,
+        }
+    }
+    if 'protoss' in args.map_name:
+        distribution_config['team_gen'] = {
+            "dist_type": "weighted_teams",
+            "unit_types": ["stalker", "zealot", "colossus"],
+            "weights": [0.45, 0.45, 0.1],
+            "observe": True,
+        }
+    elif 'zerg' in args.map_name:
+        distribution_config['team_gen'] = {
+            "dist_type": "weighted_teams",
+            "unit_types": ["zergling", "baneling", "hydralisk"],
+            "weights": [0.45, 0.1, 0.45],
+            "observe": True,
+        } 
+    elif 'terran' in args.map_name:
+        distribution_config['team_gen'] = {
+            "dist_type": "weighted_teams",
+            "unit_types": ["marine", "marauder", "medivac"],
+            "weights": [0.45, 0.45, 0.1],
+            "observe": True,
+        } 
+    return distribution_config
+
 
 
 def make_train_env(all_args):
     def get_env_fn(rank):
         def init_env():
+            units = all_args.units.split('v')
+            num_agents = int(units[0])
             if all_args.env_name == "StarCraft2":
                 env = StarCraft2Env(all_args)
+            elif all_args.env_name == "StarCraft2v2":
+                env = SMACv2(capability_config=parse_smacv2_distribution(all_args), map_name=all_args.map_name)
+                env.num_agents = num_agents # manually set the number of agents
             else:
                 print("Can not support the " +
                       all_args.env_name + "environment.")
@@ -34,8 +76,12 @@ def make_train_env(all_args):
 def make_eval_env(all_args):
     def get_env_fn(rank):
         def init_env():
+            num_agents = parse_smacv2_distribution(all_args)["n_units"]
             if all_args.env_name == "StarCraft2":
                 env = StarCraft2Env(all_args)
+            elif all_args.env_name == "StarCraft2v2":
+                env = SMACv2(capability_config=parse_smacv2_distribution(all_args), map_name=all_args.map_name)
+                env.num_agents = num_agents # manually set the number of agents
             else:
                 print("Can not support the " +
                       all_args.env_name + "environment.")
@@ -48,16 +94,19 @@ def make_eval_env(all_args):
     else:
         return ShareSubprocVecEnv([get_env_fn(i) for i in range(all_args.n_eval_rollout_threads)])
 
-
+## TODO: expand the parser
 def parse_args(args, parser):
     parser.add_argument('--map_name', type=str, default='3m',
                         help="Which smac map to run on")
+    parser.add_argument('--units', type=str, default='10v10') # for smac v2
     parser.add_argument('--use_available_actions', action='store_false',
                         default=True, help="Whether to use available actions")
     parser.add_argument('--use_same_share_obs', action='store_false',
                         default=True, help="Whether to use available actions")
     parser.add_argument('--use_global_all_local_state', action='store_true',
                         default=False, help="Whether to use available actions")
+
+
 
     all_args = parser.parse_known_args(args)[0]
 
@@ -67,6 +116,8 @@ def parse_args(args, parser):
 def main(args):
     parser = get_config()
     all_args = parse_args(args, parser)
+
+    all_args.use_wandb = False # temporariliy disable wandb for testing
 
     # cuda and # threads
     if all_args.cuda and torch.cuda.is_available():
@@ -119,11 +170,19 @@ def main(args):
     torch.manual_seed(all_args.seed)
     torch.cuda.manual_seed_all(all_args.seed)
     np.random.seed(all_args.seed)
-
+    
     env = make_train_env(all_args)
-    buffer_length = get_map_params(all_args.map_name)["limit"]
-    print(buffer_length)
-    num_agents = get_map_params(all_args.map_name)["n_agents"]
+    breakpoint()
+    if all_args.env_name == "StarCraft2":
+        from offpolicy.envs.starcraft2.smac_maps import get_map_params
+        buffer_length = get_map_params(all_args.map_name)["limit"]
+        print(buffer_length)
+        num_agents = get_map_params(all_args.map_name)["n_agents"]
+    elif all_args.env_name == "StarCraft2v2":
+        num_agents = parse_smacv2_distribution(all_args)["n_units"]
+        buffer_length = None
+        ## ? wheter need to set the buffer size here?
+
 
     # create policies and mapping fn
     if all_args.share_policy:
