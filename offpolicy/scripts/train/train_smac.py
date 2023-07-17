@@ -8,8 +8,6 @@ import setproctitle
 import torch
 from offpolicy.config import get_config
 from offpolicy.utils.util import get_cent_act_dim, get_dim_from_space
-from offpolicy.envs.starcraft2.StarCraft2_Env import StarCraft2Env
-from offpolicy.envs.starcraft2.SMACv2_modified import SMACv2
 from offpolicy.envs.env_wrappers import ShareDummyVecEnv, ShareSubprocVecEnv
 
 
@@ -56,8 +54,10 @@ def make_train_env(all_args):
             units = all_args.units.split('v')
             num_agents = int(units[0])
             if all_args.env_name == "StarCraft2":
+                from offpolicy.envs.starcraft2.StarCraft2_Env import StarCraft2Env
                 env = StarCraft2Env(all_args)
             elif all_args.env_name == "StarCraft2v2":
+                from offpolicy.envs.starcraft2.SMACv2_modified import SMACv2
                 env = SMACv2(capability_config=parse_smacv2_distribution(all_args), map_name=all_args.map_name)
                 env.num_agents = num_agents # manually set the number of agents
             else:
@@ -73,13 +73,16 @@ def make_train_env(all_args):
         return ShareSubprocVecEnv([get_env_fn(i) for i in range(all_args.n_rollout_threads)])
 
 
+
 def make_eval_env(all_args):
     def get_env_fn(rank):
         def init_env():
             num_agents = parse_smacv2_distribution(all_args)["n_units"]
             if all_args.env_name == "StarCraft2":
+                from offpolicy.envs.starcraft2.StarCraft2_Env import StarCraft2Env
                 env = StarCraft2Env(all_args)
             elif all_args.env_name == "StarCraft2v2":
+                from offpolicy.envs.starcraft2.SMACv2_modified import SMACv2
                 env = SMACv2(capability_config=parse_smacv2_distribution(all_args), map_name=all_args.map_name)
                 env.num_agents = num_agents # manually set the number of agents
             else:
@@ -117,7 +120,6 @@ def main(args):
     parser = get_config()
     all_args = parse_args(args, parser)
 
-    all_args.use_wandb = False # temporariliy disable wandb for testing
 
     # cuda and # threads
     if all_args.cuda and torch.cuda.is_available():
@@ -139,13 +141,14 @@ def main(args):
     if all_args.use_wandb:
         # init wandb
         run = wandb.init(config=all_args,
-                         project=all_args.env_name,
+                         project=all_args.env_name + str(all_args.algorithm_name),
                          entity=all_args.user_name,
                          notes=socket.gethostname(),
-                         name=str(all_args.algorithm_name) + "_" +
-                         str(all_args.experiment_name) +
-                         "_seed" + str(all_args.seed),
-                         group=all_args.map_name,
+                         name=str(all_args.experiment_name) + "_" +
+                              str(all_args.units) + "_" +
+                              str(all_args.map_name) + 
+                              "_seed" + str(all_args.seed),
+                         # group=all_args.map_name,
                          dir=str(run_dir),
                          job_type="training",
                          reinit=True)
@@ -171,8 +174,10 @@ def main(args):
     torch.cuda.manual_seed_all(all_args.seed)
     np.random.seed(all_args.seed)
     
+  
+    
     env = make_train_env(all_args)
-    breakpoint()
+
     if all_args.env_name == "StarCraft2":
         from offpolicy.envs.starcraft2.smac_maps import get_map_params
         buffer_length = get_map_params(all_args.map_name)["limit"]

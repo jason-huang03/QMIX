@@ -610,7 +610,15 @@ class StarCraft2Env(MultiAgentEnv):
 
     def step(self, actions):
         """A single environment step. Returns reward, terminated, info."""
-        actions_int = [int(a) for a in actions]
+        
+        # deal with the case that the actions[0] is ndarray of dimension greater than one
+        # TODO: deal with the case of one-hot encoding actions
+
+    
+        if actions[0].shape[0] > 1:
+            actions_int = [np.argmax(a).item() for a in actions] #! remember to change
+        else:
+            actions_int = [int(a) for a in actions]
 
         self.last_action = np.eye(self.n_actions)[np.array(actions_int)]
 

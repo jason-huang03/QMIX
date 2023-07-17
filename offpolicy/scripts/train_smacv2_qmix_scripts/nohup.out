@@ -1,0 +1,618 @@
+env is StarCraft2v2, map is 10gen_protoss, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_protoss/qmix/tune2/wandb/run-20230717_173515-5d18or4e
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qmix_tune2_5v5__seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2/runs/5d18or4e
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 32865 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-g8cqi17p/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:32865
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:48982 accepted
+ReadyHandler: 127.0.0.1:48982 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 45687 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-r_tk4_4b/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:45687
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:51502 accepted
+ReadyHandler: 127.0.0.1:51502 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+CloseHandler: 127.0.0.1:51502 disconnected
+CloseHandler: 127.0.0.1:48982 disconnected
+Terminated
+training is done!
+env is StarCraft2v2, map is 10gen_protoss, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_protoss/qmix/tune2/wandb/run-20230717_183825-98mqsasq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qmix_tune2_5v5_10gen_protoss_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2/runs/98mqsasq
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 32957 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-4rzh5pt4/'
+Starting up...
+Startup Phase 1 complete
+env is StarCraft2v2, map is 10gen_terran, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:32957
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:39708 accepted
+ReadyHandler: 127.0.0.1:39708 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_terran/qmix/tune2/wandb/run-20230717_183835-70zbbvz3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qmix_tune2_5v5_10gen_terran_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2/runs/70zbbvz3
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36227 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-j4uyslgd/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:36227
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:45926 accepted
+ReadyHandler: 127.0.0.1:45926 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+env is StarCraft2v2, map is 10gen_zerg, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_zerg/qmix/tune2/wandb/run-20230717_183852-i32lf94a
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run qmix_tune2_5v5_10gen_zerg_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2/runs/i32lf94a
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 44539 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-7oxnjll7/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:44539
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:36904 accepted
+ReadyHandler: 127.0.0.1:36904 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 43881 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-wwpcowca/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:43881
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:51448 accepted
+ReadyHandler: 127.0.0.1:51448 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 45275 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-20qzljvi/'
+Starting up...
+Startup Phase 1 complete
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 34921 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-mwewcjfd/'
+Starting up...
+Startup Phase 1 complete
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41515 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-ayw5cup9/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:45275
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:34921
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:41515
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:44246 accepted
+ReadyHandler: 127.0.0.1:44246 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+ConnectHandler: Request from 127.0.0.1:37084 accepted
+ReadyHandler: 127.0.0.1:37084 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+ConnectHandler: Request from 127.0.0.1:57644 accepted
+ReadyHandler: 127.0.0.1:57644 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 44189 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-snpxu8x3/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:44189
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:48834 accepted
+ReadyHandler: 127.0.0.1:48834 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40825 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-3ys_54hy/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:40825
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:57534 accepted
+ReadyHandler: 127.0.0.1:57534 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+CloseHandler: 127.0.0.1:37084 disconnected
+CloseHandler: 127.0.0.1:57534 disconnected
+CloseHandler: 127.0.0.1:44246 disconnected
+CloseHandler: 127.0.0.1:48834 disconnected
+CloseHandler: 127.0.0.1:57644 disconnected
+Killed
+training is done!
+Killed
+training is done!
+Killed
+training is done!
+env is StarCraft2v2, map is 10gen_protoss, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_protoss/qmix/tune2/wandb/run-20230717_185155-wo77rnop
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tune2_5v5_10gen_protoss_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2qmix
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2qmix/runs/wo77rnop
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 38681 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-28r2titb/'
+Starting up...
+Startup Phase 1 complete
+env is StarCraft2v2, map is 10gen_terran, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:38681
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:55072 accepted
+ReadyHandler: 127.0.0.1:55072 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_terran/qmix/tune2/wandb/run-20230717_185205-nhndovs8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tune2_5v5_10gen_terran_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2qmix
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2qmix/runs/nhndovs8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 34511 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-hrip8_lo/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:34511
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:52404 accepted
+ReadyHandler: 127.0.0.1:52404 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+env is StarCraft2v2, map is 10gen_zerg, algo is qmix, exp is tune2, max seed is 1
+seed is 1:
+wandb: Currently logged in as: jason-huang03. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.15.4
+wandb: Run data is saved locally in /data/haofenghuang/mappo2.0-project/off-policy/offpolicy/scripts/results/StarCraft2v2/10gen_zerg/qmix/tune2/wandb/run-20230717_185224-lktgw5b3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run tune2_5v5_10gen_zerg_seed1
+wandb: ⭐️ View project at https://wandb.ai/jason-huang03/StarCraft2v2qmix
+wandb: 🚀 View run at https://wandb.ai/jason-huang03/StarCraft2v2qmix/runs/lktgw5b3
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 42189 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-_l84gxoo/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:42189
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:40826 accepted
+ReadyHandler: 127.0.0.1:40826 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46825 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-r63bvabq/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:46825
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:40262 accepted
+ReadyHandler: 127.0.0.1:40262 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 35139 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-41rf4h9c/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:35139
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:59316 accepted
+ReadyHandler: 127.0.0.1:59316 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 39791 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-3omea6so/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:39791
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:44652 accepted
+ReadyHandler: 127.0.0.1:44652 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 35585 -dataDir /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/ -tempDir /tmp/sc-xxl9th_a/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:35585
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:60678 accepted
+ReadyHandler: 127.0.0.1:60678 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/haofenghuang/mappo2.0-project/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:59316 disconnected

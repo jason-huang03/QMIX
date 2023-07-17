@@ -100,6 +100,7 @@ class SMACRunner(RecRunner):
             env_acts = np.split(acts_batch, self.num_envs)
 
             # env step and store the relevant episode information
+           
             next_obs, next_share_obs, rewards, dones, infos, next_avail_acts = env.step(env_acts)
             if training_episode or warmup:
                 self.total_env_steps += self.num_envs

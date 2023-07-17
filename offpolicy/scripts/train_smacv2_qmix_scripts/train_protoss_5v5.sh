@@ -14,7 +14,7 @@ for seed in $(seq ${seed_max}); do
      --algorithm_name ${algo} --experiment_name ${exp} --map_name ${map} --units ${units}\
       --seed 1 --n_training_threads 128 --buffer_size 5000 --lr 5e-4 --batch_size 32 --use_soft_update \
        --hard_update_interval_episode 200 --num_env_steps 10000000 \
-       --log_interval 3000 --eval_interval 20000 \
+       --log_interval 2000 --eval_interval 20000 \
        --use_global_all_local_state --gain 1 \
        --user_name "jason-huang03"
     echo "training is done!"
